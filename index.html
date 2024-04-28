@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gestion des Mangas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestion des Mangas</h1>
+      <form id="form-ajout-manga">
+        <input type="text" id="nom-manga" placeholder="Nom du manga" required />
+        <select id="serie-manga" required>
+          <option value="">Choisissez une série</option>
+          <option value="One piece">One piece</option>
+          <option value="L'atelier du sorcier">L'atelier du sorcier</option>
+          <option value="Fairy tail">Fairy tail</option>
+          <option value="Slam dunk">Slam dunk</option>
+        </select>
+        <select id="qualite-manga" required>
+          <option value="">Notation (0-5 étoiles)</option>
+          <option value="0">☆☆☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="4">★★★★☆</option>
+          <option value="5">★★★★★</option>
+        </select>
+        <button type="submit">Ajouter Manga</button>
+      </form>
+      <div id="One piece" class="serie-container"><h2>One piece</h2></div>
+      <div id="L'atelier du sorcier" class="serie-container">
+        <h2>L'atelier du sorcier</h2>
+      </div>
+      <div id="Fairy tail" class="serie-container"><h2>Fairy tail</h2></div>
+      <div id="Slam dunk" class="serie-container"><h2>Slam dunk</h2></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

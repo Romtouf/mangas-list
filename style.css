@@ -1,0 +1,109 @@
+/* Styles généraux pour le corps de la page */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Style du container principal */
+.container {
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les titres */
+h1,
+h2 {
+  color: #333;
+}
+
+/* Mise en forme du formulaire */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input[type="text"],
+select,
+button {
+  flex: 1 1 48%; /* Permet deux éléments par ligne */
+  padding: 10px;
+  margin: 5px 1%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #5c67f2;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4a54e1;
+}
+
+/* Styles pour la section de chaque série de mangas */
+.serie-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+/* Styles pour chaque manga ajouté */
+.manga {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Styles pour le bouton Delete */
+.manga button {
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  margin: 2px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.manga button:hover {
+  background-color: #ff3333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container,
+  form,
+  input[type="text"],
+  select,
+  button {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+}
